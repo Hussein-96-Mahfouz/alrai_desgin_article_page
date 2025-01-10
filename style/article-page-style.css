@@ -90,7 +90,6 @@
     font-weight: 800;
     line-height: normal;
     text-decoration: none;
-    border-left: 1px solid #D3D3D3;
     padding: 0 8px;
 }
 
@@ -101,21 +100,30 @@
 
 .article-details .row-article-option .print-section span {
     padding-left: 8px;
-    border-left: 1px solid #D3D3D3;
 }
 
 .article-details .row-article-option .copy-link span {
     padding-left: 8px;
-    border-left: 1px solid #D3D3D3;
 }
 
 
-.article-details .row-article-option .author-name,
-.article-details .row-article-option .copy-link,
-.article-details .row-article-option .print-section {
-    padding-top: 8px;
-    padding-bottom: 8px;
+
+.article-details .row-article-option .options{
+    padding: 8px 0 ;
 }
+
+.article-details .row-article-option .options .author-name,
+.article-details .row-article-option .options .print-section,
+.article-details .row-article-option .options .copy-link{
+border-left: 1px solid #D3D3D3;
+}
+
+
+.article-details .row-article-option .copy-link{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
 
 .article-details .row-article-option .options {
     display: flex;
@@ -210,6 +218,15 @@
     .article-details .article-body-info{
         width: 100%;
     }
+
+        .article-details .row-article-option .options .author-name,
+        .article-details .row-article-option .options .print-section,
+        .article-details .row-article-option .options .copy-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
 }
 
 
